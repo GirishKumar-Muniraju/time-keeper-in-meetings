@@ -18,7 +18,7 @@ const COLOR_CODES = {
   },
 };
 
-const DEFAULT_START_TIME = 13;
+const DEFAULT_START_TIME = 5;
 let AUTO_LOOP_STATUS = false;
 let TIME_LIMIT = DEFAULT_START_TIME;
 let timePassed = 0;
@@ -58,8 +58,9 @@ document.getElementById('app').innerHTML = `
 <div>
 <!-- <div id="audioTag"></div> -->
 <audio controls hidden id="customAudio">
+<source src="5Sec_Bell.mp3" type="audio/mpeg"> 
 <!--<source src="https://drive.google.com/uc?usp=slides_web&id=1LyZW9gPDnRPiOW_8PFSMrqZF3rpVtBnd&playback"> -->
-<source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg"> 
+<!-- <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg"> -->
 Your browser does not support the audio element
 </audio> 
 `;
@@ -194,8 +195,9 @@ function playAudio() {
   // <button type="button" class="btn btn-primary" onclick="stopAudio()">Stop Audio</button>
   document.getElementById('audioTag').innerHTML = `
   <audio controls autoplay hidden="hidden">
+  <source src="5Sec_Bell.mp3" type="audio/mpeg">
   <!--<source src="https://drive.google.com/uc?usp=slides_web&id=1LyZW9gPDnRPiOW_8PFSMrqZF3rpVtBnd&playback"> -->
-    <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg"> 
+  <!-- <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg"> -->
     Your browser does not support the audio element
   </audio>
 `;
